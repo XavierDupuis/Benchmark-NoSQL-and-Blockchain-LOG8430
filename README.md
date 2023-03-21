@@ -4,7 +4,7 @@ LOG8430 Benchmark NoSQL and Blockchain
 # Cassandra + Yahoo! Cloud Serving Benchmark (NoSQL Database Benchmark)
 ## Build
 ```shell
-docker build -t cassandra-with-yscb ./cassandra/
+docker build -t cassandra-with-ycsb ./cassandra/
 ```
 
 ## Run 
