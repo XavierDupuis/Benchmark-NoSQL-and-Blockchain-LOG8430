@@ -52,17 +52,3 @@ for workload in data.keys():
             stats[workload][category][attribute]["mean"] = mean
             stats[workload][category][attribute]["stdev"] = variance ** 0.5
 
-for workload in data.keys():
-    w = data[workload]
-    stats[workload] = {}
-    for category in w.keys():
-        c = w[category]
-        stats[workload][category] = {}
-        for attribute in c.keys():
-            a = c[attribute]
-            stats[workload][category][attribute] = {}
-            mean = sum(a) / len(a)
-            variance = sum([((x - mean) ** 2) for x in a]) / len(a)
-            stats[workload][category][attribute]["mean"] = mean
-            stats[workload][category][attribute]["stdev"] = variance ** 0.5
-
