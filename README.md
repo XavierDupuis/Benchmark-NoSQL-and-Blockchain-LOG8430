@@ -11,12 +11,12 @@ docker build -t cassandra-with-ycsb ./cassandra/
 ### LINUX / MACOS / WINDOWS POWERSHELL
 
 ```shell
-docker run -it -e ITERATIONS=5 -v ${PWD}/out:/mnt cassandra-with-ycsb
+docker run -it -e ITERATIONS=5 -v ${PWD}/cassandra/out:/mnt cassandra-with-ycsb
 ```
 
 ### WINDOWS CMD
 ```cmd
-docker run -it -e ITERATIONS=5 -v %cd%/out:/mnt cassandra-with-ycsb
+docker run -it -e ITERATIONS=5 -v %cd%/cassandra/out:/mnt cassandra-with-ycsb
 ```
 
 
