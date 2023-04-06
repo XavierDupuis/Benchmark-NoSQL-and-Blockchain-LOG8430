@@ -52,3 +52,5 @@ for workload in data.keys():
             stats[workload][category][attribute]["mean"] = mean
             stats[workload][category][attribute]["stdev"] = variance ** 0.5
 
+print(data)
+print(stats)
