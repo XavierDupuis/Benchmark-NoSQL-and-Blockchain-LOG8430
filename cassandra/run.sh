@@ -21,7 +21,7 @@ docker exec -it cassandra1 cqlsh 192.168.5.2 -u cassandra -p cassandra -e "creat
     field8 varchar,
     field9 varchar);"
 
-for i in c a f
+for i in c a g
 do
 	echo WORKLOAD,$i,3 >> out/LoadCassandra.txt
 	echo WORKLOAD,$i,3 >> out/RunCassandra.txt
